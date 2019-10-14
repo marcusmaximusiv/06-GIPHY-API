@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
+    <title>GIPHY API!</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Giphy API</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 id="button-title">Buttons</h1>
+                <p>Click on any of the buttons below to see what Giphy returns for your button!</p>
+                <br>
+                <div id="buttons"></div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div id="pictures" class="col-sm-8">
+                <h3>Pictures</h3>
+                <div id="picture-view"></div>
+            </div>
+            <div class="col-sm-4">
+                <h3>Create a Button!</h3>
+                <p>Create a button of what you would like to see</p>
+                <form>
+                    <input id="giphyinput" type="text">
+                    <br>
+                    <br>
+                    <input id="giphysearch" type="submit" value="Add a Button!">
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
