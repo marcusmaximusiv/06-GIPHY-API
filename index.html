@@ -67,17 +67,16 @@
                 //var imageUrl = response.data.image_original_url;
                 div.addClass("gifs");
                 //images.attr("src", imageUrl);
-                div.append('<div>' + '<br>' + '<p> Rating ' + response.data[0].rating + '</p>' + '<img src="' + response.data[0].images.fixed_height.url + '"/>' + '</div>')
-                console.log(response.data[0].embed_url)
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[1].rating + '</p>' + '<img src="' + response.data[1].images.fixed_height.url + '"/>' + '</div>')
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[2].rating + '</p>' + '<img src="' + response.data[2].images.fixed_height.url + '"/>' + '</div>')
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[3].rating + '</p>' + '<img src="' + response.data[3].images.fixed_height.url + '"/>' + '</div>')
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[4].rating + '</p>' + '<img src="' + response.data[4].images.fixed_height.url + '"/>' + '</div>')
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[5].rating + '</p>' + '<img src="' + response.data[5].images.fixed_height.url + '"/>' + '</div>')
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[6].rating + '</p>' + '<img src="' + response.data[6].images.fixed_height.url + '"/>' + '</div>')
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[7].rating + '</p>' + '<img src="' + response.data[7].images.fixed_height.url + '"/>' + '</div>')
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[8].rating + '</p>' + '<img src="' + response.data[8].images.fixed_height.url + '"/>' + '</div>')
-                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[9].rating + '</p>' + '<img src="' + response.data[9].images.fixed_height.url + '"/>' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rating ' + response.data[0].rating + '</p>' + '<img src="' + response.data[0].images.fixed_height.url + '" data-state="still" data-animate="response.data[0].images.fixed_height.url" data-still="response.data[0].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[1].rating + '</p>' + '<img src="' + response.data[1].images.fixed_height.url + '" data-state="still" data-animate="response.data[1].images.fixed_height.url" data-still="response.data[1].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[2].rating + '</p>' + '<img src="' + response.data[2].images.fixed_height.url + '" data-state="still" data-animate="response.data[2].images.fixed_height.url" data-still="response.data[2].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[3].rating + '</p>' + '<img src="' + response.data[3].images.fixed_height.url + '" data-state="still" data-animate="response.data[3].images.fixed_height.url" data-still="response.data[3].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[4].rating + '</p>' + '<img src="' + response.data[4].images.fixed_height.url + '" data-state="still" data-animate="response.data[4].images.fixed_height.url" data-still="response.data[4].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[5].rating + '</p>' + '<img src="' + response.data[5].images.fixed_height.url + '" data-state="still" data-animate="response.data[5].images.fixed_height.url" data-still="response.data[5].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[6].rating + '</p>' + '<img src="' + response.data[6].images.fixed_height.url + '" data-state="still" data-animate="response.data[6].images.fixed_height.url" data-still="response.data[6].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[7].rating + '</p>' + '<img src="' + response.data[7].images.fixed_height.url + '" data-state="still" data-animate="response.data[7].images.fixed_height.url" data-still="response.data[7].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[8].rating + '</p>' + '<img src="' + response.data[8].images.fixed_height.url + '" data-state="still" data-animate="response.data[8].images.fixed_height.url" data-still="response.data[8].images.fixed_height_small_still" >' + '</div>')
+                div.append('<div>' + '<br>' + '<p> Rated: ' + response.data[9].rating + '</p>' + '<img src="' + response.data[9].images.fixed_height.url + '" data-state="still" data-animate="response.data[9].images.fixed_height.url" data-still="response.data[9].images.fixed_height_small_still" >' + '</div>')
                 $("#picture-view").prepend(div);
             });
         }
