@@ -13,3 +13,10 @@ form{
 .row{
     border-style: solid;
 }
+#buttons{
+    text-align: center;
+    padding: 10px; 
+}
+.gifs{
+    text-align: center;
+}

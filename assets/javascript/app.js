@@ -3,7 +3,8 @@ var topics = ["Batman", "Superman", "Spiderman", "Thor", "Hulk"];
 
 function displayTopic() {
     var topic = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&tag=" + topic;
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topics[1] + "api_key=RWpS1BhCyt7lvwnIpnSbv4S2JkGl5VHu&limit=10";
+    console.log(queryURL);
 
     // Creating an AJAX call for the specific movie button being clicked
     $.ajax({
@@ -11,8 +12,24 @@ function displayTopic() {
         method: "GET"
     }).then(function (response) {
         console.log(response);
+        var div = $("<div>");
+        div.addClass("gifs");
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[0].rating + '</p>' + '<br>' + '<img src="' + response.data[0].embed_url + '"/>' + '</div>')
+        console.log(response.data[0].embed_url)
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[1].rating + '</p>' + '<br>' + '<img src="' + response.data[1].url + '"/>' + '</div>')
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[2].rating + '</p>' + '<br>' + '<img src="' + response.data[2].url + '"/>' + '</div>')
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[3].rating + '</p>' + '<br>' + '<img src="' + response.data[3].url + '"/>' + '</div>')
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[4].rating + '</p>' + '<br>' + '<img src="' + response.data[4].url + '"/>' + '</div>')
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[5].rating + '</p>' + '<br>' + '<img src="' + response.data[5].url + '"/>' + '</div>')
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[6].rating + '</p>' + '<br>' + '<img src="' + response.data[6].url + '"/>' + '</div>')
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[7].rating + '</p>' + '<br>' + '<img src="' + response.data[7].url + '"/>' + '</div>')
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[8].rating + '</p>' + '<br>' + '<img src="' + response.data[8].url + '"/>' + '</div>')
+        $(".gifs").append('<div>' + '<p> Rating ' + response.data[9].rating + '</p>' + '<br>' + '<img src="' + response.data[9].url + '"/>' + '</div>')
+        $("#picture-view").prepend(div);
     });
 }
+
+
 
 function renderButtons() {
 
@@ -40,9 +57,9 @@ function renderButtons() {
 //clicking on the giphysearch button and it records the value and push the info
 $("#giphysearch").on("click", function (event) {
     event.preventDefault();
-    var topic = $("#giphyinput").val().trim();
-    topics.push(topic);
-    console.log(topics);
+    var newtopic = $("#giphyinput").val().trim();
+    topics.push(newtopic);
+    console.log(newtopic);
     renderButtons();
 });
 // Adding a click event listener to all elements with a class of "movie-btn"
