@@ -3,7 +3,7 @@ var topics = ["Batman", "Superman", "Spiderman", "Thor", "Hulk"];
 
 function displayTopic() {
     var topic = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topics[1] + "api_key=RWpS1BhCyt7lvwnIpnSbv4S2JkGl5VHu&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topics[1] + "api_key=RWpS1BhCyt7lvwnIpnSbv4S2JkGl5VHu&limit=10";
     console.log(queryURL);
 
     // Creating an AJAX call for the specific movie button being clicked
